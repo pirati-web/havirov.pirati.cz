@@ -1,0 +1,100 @@
+---
+layout: default
+---
+
+<!--
+{% include homepage/banner.html
+title=page.title
+default=page.boroughBannerDefault
+mobile=page.boroughBannerMobile
+breakpoint=640
+%}
+-->
+
+<div class="c-corner-ribbon-container">
+  {% capture headerContent %}
+    <div class="c-content-block c-emphasized-text">{{ content }}</div>
+  {% endcapture %}
+  {% include page-header.html headline=page.title content=headerContent %}
+</div>
+
+<div class="o-section">
+  <div class="row">
+    <div class="columns medium-8">
+      <div class="o-section-header o-section-header--bordered">
+        <h3 class="o-section__heading t-h2-super">Aktuální témata</h3>
+      </div>
+      <div class="o-section-inner o-section-inner--leftBlock">
+
+        {% assign applicablePosts = site.posts | where: "tags", page.boroughTag | sort: 'order' %}
+        {% for article in applicablePosts limit: 8 %}
+          {% include articles/horizontal-article.html article=article %}
+        {% endfor %}
+
+        <div class="c-article-listing__nextbox">
+          <a href="{{'/aktuality/' | relative_url}}" rel="next" class="button expanded large">Archiv všech článků</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns medium-4">
+      <div class="o-section-header o-section-header--bordered">
+        <h3 class="o-section__heading t-h2-super">Náš tým</h3>
+      </div>
+      <div class="o-section-block" style="margin-top: 1.5rem;">
+        <ul class="c-widget-accordion" data-accordion="" data-allow-all-closed="true">
+          <li class="c-widget-accordion-item is-active" data-accordion-item="">
+            <div class="c-widget-accordion-content" data-tab-content="">
+              {% assign team = site.data.boroughTeams | where: "boroughTeamUid", page.boroughTeamUid | first %}
+              {% for member in team.members %}
+                {% assign description = "" %}
+                {% if member.council %}
+                  {% assign description = member.council %}
+                {% elsif member.assembly %}
+                  {% assign description = member.assembly %}
+                {% endif %}
+                {% if member.commission %}
+                  {% if description == "" %}
+                    {% assign description = member.commission %}
+                  {% else %}
+                    {% assign description = description | append: ", " | append: member.commission %}
+                  {% endif %}
+                {% endif %}
+                {% if member.committee %}
+                  {% if description == "" %}
+                    {% assign description = member.committee %}
+                  {% else %}
+                    {% assign description = description | append: ", " | append: member.committee %}
+                  {% endif %}
+                {% endif %}
+                {% assign person = site.people | where: "uid", member.uid | first %}
+                {% include people/profile-badge.html item=person description=description style='card' showContactInfo=false class='c-profile-badge--stacked c-profile-badge--bottomalign' headlineClass='t-h6-super' %}
+              {% endfor %}
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="columns medium-4">
+      <div class="o-section-header o-section-header--bordered">
+        <h3 class="o-section__heading t-h2-super">Odkazy</h3>
+      </div>
+      {% for category in page.linkCategories %}
+        <div class="o-section-block" style="margin-top: 1.5rem;">
+          <ul class="c-widget-accordion" data-accordion="" data-allow-all-closed="true" style="margin-bottom: 0;">
+            <li class="c-widget-accordion-item is-active" data-accordion-item="">
+              <div class="c-widget-accordion-content" data-tab-content="">
+                <h2 class="t-h5-super">{{ category.name }}</h2>
+                {% for link in category.links %}
+                  <a href="{{ link.link | relative_url }}">{{ link.name }}</a><br />
+                {% endfor %}
+              </div>
+            </li>
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>

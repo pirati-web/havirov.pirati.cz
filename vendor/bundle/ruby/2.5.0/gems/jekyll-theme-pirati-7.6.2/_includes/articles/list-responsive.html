@@ -1,0 +1,9 @@
+<div class="o-section-block">
+  <div class="row u-uniform-size-row">
+    {% for article in include.posts %}
+      <div class="medium-6 large-4 columns {% if forloop.last %}end{% endif %}">
+        {% include articles/vertical-article.html article=article %}
+      </div>
+    {% endfor %}
+  </div>
+</div>

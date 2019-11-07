@@ -1,0 +1,21 @@
+/**
+ * Homepage banner image
+ */
+
+.c-hp-banner {
+  margin-top: 2rem;
+
+  @include breakpoint(small down) {
+    margin: 1.5rem 0;
+  }
+
+  .c-hp-banner__media,
+  .c-hp-banner__link {
+    display: block;
+  }
+
+  .c-hp-banner__link {
+    border-bottom: 1px $primary-color solid;
+    padding-bottom: 1rem;
+  }
+}

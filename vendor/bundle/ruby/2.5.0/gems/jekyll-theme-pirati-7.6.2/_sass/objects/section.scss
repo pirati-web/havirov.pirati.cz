@@ -1,0 +1,211 @@
+$section-ns: '';
+
+.#{$section-ns}o-section {
+  padding: 2rem 0;
+
+  @include breakpoint(mobile down) {
+    padding: 1rem 0;
+  }
+}
+
+.#{$section-ns}o-section-block + .#{$section-ns}o-section-block {
+  margin-top: 2rem;
+}
+
+.#{$section-ns}o-section-block--medium + .#{$section-ns}o-section-block--medium {
+  @include breakpoint(medium down) {
+    margin-top: 2rem;
+  }
+}
+
+.#{$section-ns}o-section-block {
+  @include clearfix;
+}
+
+.#{$section-ns}o-section-block--fill {
+
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
+
+  @include breakpoint(mobile) {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+  }
+
+  @include breakpoint(medium) {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+  }
+}
+
+.#{$section-ns}o-section--divided  + .#{$section-ns}o-section--divided  {
+  position: relative;
+  margin-top: 2rem;
+  padding-top: 2rem;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0rem;
+    right: 0rem;
+    top: -0.15rem;
+    height: 1px;
+    background: #f3f3f3;
+  }
+}
+
+.#{$section-ns}o-section-block--divided +
+.#{$section-ns}o-section-block--divided {
+  margin-top: 4rem;
+}
+
+.#{$section-ns}o-section-block--divided-small +
+.#{$section-ns}o-section-block--divided-small {
+  padding-top: 2rem;
+  margin-top: 2rem;
+
+  @include breakpoint(medium down) {
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+
+  @include breakpoint(mobile down) {
+    padding-top: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+.#{$section-ns}o-section-mediumdown-divided-small +
+.#{$section-ns}o-section-mediumdown-divided-small {
+
+  @include breakpoint(medium down) {
+    margin-top: 2rem;
+  }
+}
+
+.#{$section-ns}o-section-block--divided-small-desktop +
+.#{$section-ns}o-section-block--divided-small-desktop {
+
+  @include breakpoint(medium down) {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+}
+
+.#{$section-ns}o-section-block--divided-small--border +
+.#{$section-ns}o-section-block--divided-small--border {
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 1.25rem;
+    right: 1.25rem;
+    top: 0rem;
+    height: 1px;
+    background: #f3f3f3;
+  }
+}
+
+.#{$section-ns}o-section-block--divided-small--border--tight +
+.#{$section-ns}o-section-block--divided-small--border--tight {
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left:  2rem;
+    right: 2rem;
+    top: 0rem;
+    height: 1px;
+    background: #f3f3f3;
+  }
+
+  @include breakpoint(medium down) {
+    &:before {
+      left: 1.75rem;
+      right: 1.75rem;
+    }
+  }
+}
+
+.#{$section-ns}o-section-block--spaceBot {
+  margin-bottom: 2rem;
+}
+
+.#{$section-ns}o-section.#{$section-ns}o-section--smaller {
+  padding: 1rem 0;
+}
+
+
+.#{$section-ns}o-section.#{$section-ns}o-section--bigger {
+  @include breakpoint(mobile down) {
+    padding: 1rem 0;
+  }
+}
+
+.#{$section-ns}o-section--noSpaceBottom {
+  padding-bottom: 0;
+
+  @include breakpoint(mobile down) {
+    padding: 1rem 0;
+  }
+}
+
+.#{$section-ns}o-section.#{$section-ns}o-section--noSpaceBottom-medium {
+  padding-bottom: 0;
+}
+
+.#{$section-ns}o-section.#{$section-ns}o-section--spaceBot {
+  padding-bottom: 3rem;
+
+  @include breakpoint(large down) {
+    padding-bottom: 2rem;
+  }
+
+  @include breakpoint(mobile down) {
+    padding-bottom: 1rem;
+  }
+
+}
+
+.#{$section-ns}o-section.#{$section-ns}o-section--darker {
+  background: $ternary-color;
+}
+
+.#{$section-ns}o-section-inner--leftBlock {
+
+  @include breakpoint(large) {
+    padding-right: 0;
+  }
+}
+
+.#{$section-ns}o-section-inner--rightBlock {
+
+  @include breakpoint(large) {
+    padding-left: 0;
+  }
+}
+
+.#{$section-ns}o-section .#{$section-ns}o-section-header {
+  position: relative;
+  color: $primary-color;
+
+  &--bordered {
+    border-bottom: 1px solid $ternary-color;
+  }
+
+  &--indented {
+    margin-bottom: 2rem;
+  }
+}
+
+.#{$section-ns}o-section__heading {
+  @include headerStyle('h3', super);
+
+  color: $primary-color;
+  margin-bottom: 0;
+}

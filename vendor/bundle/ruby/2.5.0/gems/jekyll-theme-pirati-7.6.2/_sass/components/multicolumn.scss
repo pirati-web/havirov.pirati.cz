@@ -1,0 +1,25 @@
+.c-multicolumn {
+  column-count: 2;
+  column-gap: 2rem;
+  column-rule: 1x $primary-color solid;
+
+  &.c-multicolumn--responsive {
+    @include breakpoint(medium down) {
+      column-count: 1;
+    }
+  }
+}
+
+.c-multicolumn--three {
+  column-count: 3;
+
+  &.c-multicolumn--responsive {
+    @include breakpoint(medium down) {
+      column-count: 2;
+    }
+
+    @include breakpoint(small down) {
+      column-count: 1;
+    }
+  }
+}

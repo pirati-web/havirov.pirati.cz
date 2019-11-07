@@ -1,0 +1,83 @@
+.c-blockquote {
+  font-size: 1.45rem;
+  font-style: italic;
+  color: $dark-gray;
+
+  padding: 1rem 0 0;
+  margin: 0 0 2rem;
+  border-left: 0;
+
+  @include breakpoint(medium down) {
+    br {
+      display: none;
+    }
+  }
+}
+
+.c-blockquote--wicon {
+  padding-top: 3rem;
+
+  &:before,
+  p:last-of-type:after {
+    line-height: 1;
+    opacity: 0.2;
+    font-size: 12rem;
+    height: 55px;
+    font-family: #{getHeaderSettings(family, super)};
+    font-weight: getHeaderSettings(weight, super);
+    font-style: normal;
+  }
+
+  &:before {
+    content: '“';
+    float: left;
+    margin-left: -7px;
+    margin-top: -1.5rem;
+    padding-right: 1rem;
+  }
+
+  p:last-of-type:after {
+    content: '”';
+    float: right;
+    margin-right: -7px;
+    margin-top: .5rem;
+    padding-left: 1rem;
+  }
+
+  // override foundation
+  cite {
+    font-size: 1em;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium down) {
+    padding-top: 1rem;
+
+    &:before,
+    p:last-of-type:after {
+      font-size: 8rem;
+      height: 40px;
+    }
+
+    &:before {
+      margin-top: -0.5rem;
+      margin-left: -5px;
+    }
+
+    p:last-of-type:after {
+      margin-right: -5px;
+      margin-top: .2rem;
+    }
+  }
+
+  // @include breakpoint(mobile down) {
+  //   padding-left: 0;
+  //   padding-top: 2.5rem;
+  //   &:before {
+  //     font-size: 2.5rem;
+  //   }
+  // }
+}

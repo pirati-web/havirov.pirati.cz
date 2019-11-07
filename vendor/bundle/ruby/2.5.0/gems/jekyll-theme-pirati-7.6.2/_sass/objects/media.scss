@@ -1,0 +1,35 @@
+/**
+ * This is just basic foundation media objects with few powerups.
+ * @see: https://foundation.zurb.com/sites/docs/media-object.html
+ */
+
+.o-media {
+  @include media-object-container;
+
+  // added padding from the right
+  &.o-media--rpadded {
+    padding-right: 1rem;
+  }
+
+  // card-style media object
+  &.o-media--fill {
+    background: $white;
+  }
+}
+
+.o-media__image--round {
+    border-radius: 50%;
+}
+
+.o-media__section {
+  @include media-object-section(1rem);
+}
+
+.o-media__section-inner--vpadded {
+  padding: 1rem 0;
+}
+
+.o-media-list + .o-media-list {
+  margin-top: 1rem;
+}
+

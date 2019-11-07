@@ -1,0 +1,7 @@
+.c-member-list__item {
+  margin-bottom: 2rem;
+
+  @include breakpoint(medium) {
+    margin-bottom: 4rem;
+  }
+}

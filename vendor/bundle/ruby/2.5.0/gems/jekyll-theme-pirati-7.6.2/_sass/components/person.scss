@@ -1,0 +1,9 @@
+.c-person__content {
+  @include breakpoint(medium) {
+    padding-right: 4rem;
+  }
+}
+
+.c-person-image {
+  margin-top: 2rem;
+}

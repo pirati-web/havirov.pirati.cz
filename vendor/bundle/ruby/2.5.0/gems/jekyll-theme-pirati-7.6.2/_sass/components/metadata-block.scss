@@ -1,0 +1,29 @@
+/**
+ * This component represents a metadata block. It's usually used with blog
+ * postings to show author/date of publication etc.
+ */
+
+// meta split in multiple lines on medium down
+.c-metadata-block-section {
+  display: inline-block;
+
+  @include breakpoint(medium down) {
+    display: block;
+    line-height: 2;
+  }
+
+  &:not(:first-child) {
+    margin-left: 3rem;
+
+    @include breakpoint(medium down) {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.c-metadata-block-section__item + .c-metadata-block-section__item {
+  @include breakpoint(medium) {
+    margin-left: 0.5rem;
+  }
+}

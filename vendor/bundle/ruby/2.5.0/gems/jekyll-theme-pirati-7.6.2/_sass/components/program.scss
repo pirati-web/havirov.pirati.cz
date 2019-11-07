@@ -1,0 +1,150 @@
+$program-item-ns: '';
+
+.c-program-key-point-list {
+    dt:not(:first-of-type)::before {
+        content: "\A";
+        white-space: pre-wrap;
+        display: block;
+        height: 1em;
+    }
+
+    dt, dd {
+        display: inline;
+        margin: 0;
+    }
+}
+
+.o-section-header + .c-program-candidates,
+.o-section-header + .c-program-items {
+    margin-top: 1.5rem;
+}
+
+.c-program-intro {
+    padding: 1.25rem;
+}
+
+.c-program-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    @include breakpoint(medium down) {
+        flex-direction: column;
+    }
+}
+
+.c-program-items__item {
+    display: flex;
+    max-width: 100%;
+}
+
+.c-program-items__item-wrap {
+    display: flex;
+    color: $white;
+}
+
+.c-program-items__item-inner {
+    a:not(.button) {
+        color: $black;
+        // color: $white;
+        text-decoration: none;
+    }
+}
+
+.c-program-items__item + .c-program-items__item {
+  margin-top: 1.5rem;
+}
+
+.c-program-candidates {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.c-program-candidate-badge {
+  display: flex; // keep the height uniform
+  width: 100%;
+  margin-bottom: 1.5rem;
+
+}
+
+.c-program-candidate-badge__body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: $light-gray;
+  position: relative;
+
+}
+
+.c-program-candidate-badge__description {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-program-candidate-badge__name {
+  margin-top: auto;
+  margin-bottom: 0;
+  padding-right: 30px; // space for the rank circle
+
+  @include headerStyle('h6', super);
+
+  @include breakpoint(medium) {
+    padding-right: 45px; // space for the rank circle
+
+    @include headerStyle('h5', super);
+  }
+}
+
+.c-program-candidate-badge__profession {
+    display: block;
+    font-weight: 300;
+}
+
+.c-program-candidate-badge__bio {
+    margin-bottom: 0;
+
+    @include breakpoint(medium down) {
+        display: none;
+    }
+}
+
+.c-program-candidate-badge__avatar {
+    flex-shrink: 0;
+    max-width: calc(33.333% - 0.75rem);
+
+    @include breakpoint(medium) {
+      max-width: calc(225px - 0.75rem);
+    }
+}
+
+.c-program-candidate-badge__rank {
+    display: block;
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    // Compensate for the font misalignment.
+    line-height: 31px;
+    text-align: center;
+    color: $black;
+    border: 2px $black solid;
+
+    @include headerStyle('h6', super);
+
+    @include breakpoint(medium) {
+      top: 1.5rem;
+      right: 1.5rem;
+      width: 45px;
+      height: 45px;
+      // Compensate for the font misalignment.
+      line-height: 45px;
+      border-width: 3px;
+
+      @include headerStyle('h5', super);
+    }
+}

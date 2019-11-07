@@ -1,7 +1,9 @@
 ---
 uid: ondrej.polansky
 name:     Ondřej Polanský  	# běžně používáné jméno
-fullname: Ondřej Polanský  	# jméno s tituly etc.
+titles:
+  before:
+  after:
 category:                 	# kategorie: rp, praha, vary, hradec, jmk, senat
 - psp
 img: people/ondrej-polansky.jpg   # 165 x 220

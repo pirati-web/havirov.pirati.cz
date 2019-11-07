@@ -1,0 +1,25 @@
+.c-corner-ribbon-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.c-corner-ribbon {
+  width: 200px;
+  background: $primary-color;
+  position: absolute;
+  top: 25px;
+  left: -55px;
+  text-align: center;
+  line-height: 40px;
+  color: $secondary-color;
+  transform: rotate(-45deg);
+
+  @include headerStyle('h5', main);
+}
+
+.c-corner-ribbon--top-right {
+  top: 25px;
+  right: -55px;
+  left: auto;
+  transform: rotate(45deg);
+}

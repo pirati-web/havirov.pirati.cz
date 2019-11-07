@@ -1,0 +1,136 @@
+AllCops:
+  Exclude:
+    - '*.gemspec'
+    - 'vendor/**/*'
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Layout/AccessModifierIndentation:
+  EnforcedStyle: outdent
+
+Layout/CaseIndentation:
+  EnforcedStyle: end
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
+
+Layout/IndentFirstArrayElement:
+  EnforcedStyle: consistent
+
+Layout/IndentAssignment:
+  Enabled: false
+
+Layout/IndentFirstHashElement:
+  EnforcedStyle: consistent
+
+Layout/IndentHeredoc:
+  Enabled: false
+
+Layout/RescueEnsureAlignment:
+  Enabled: false
+
+Layout/SpaceBeforeBlockBraces:
+  EnforcedStyle: no_space
+  EnforcedStyleForEmptyBraces: no_space
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - spec/**/*_spec.rb
+
+Lint/NestedPercentLiteral:
+  Enabled: false
+
+Lint/UnneededRequireStatement:
+  Enabled: false
+
+Lint/UnneededSplatExpansion:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 33
+
+Metrics/BlockLength:
+  Exclude:
+    - 'lib/image_optim/runner/option_parser.rb'
+    - 'script/worker_analysis'
+    - 'spec/**/*.rb'
+
+Metrics/ClassLength:
+  Max: 150
+
+Metrics/CyclomaticComplexity:
+  Max: 11
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 25
+
+Metrics/PerceivedComplexity:
+  Max: 8
+
+Security/MarshalLoad:
+  Exclude:
+    - 'script/worker_analysis'
+
+Style/Alias:
+  EnforcedStyle: prefer_alias_method
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/EmptyCaseCondition:
+  Enabled: false
+
+Style/Encoding:
+  Enabled: false
+
+Style/ExpandPathArguments:
+  Enabled: false
+
+Style/FormatStringToken:
+  Enabled: false
+
+Style/HashSyntax:
+  EnforcedStyle: hash_rockets
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/NumericPredicate:
+  EnforcedStyle: comparison
+
+Style/ParallelAssignment:
+  Enabled: false
+
+Style/RescueStandardError:
+  EnforcedStyle: implicit
+
+Style/SafeNavigation:
+  Enabled: false
+
+Style/Semicolon:
+  AllowAsExpressionSeparator: true
+
+Style/SignalException:
+  EnforcedStyle: semantic
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: no_comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma

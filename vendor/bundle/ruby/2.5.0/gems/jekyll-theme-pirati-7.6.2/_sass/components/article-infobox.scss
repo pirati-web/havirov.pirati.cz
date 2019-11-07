@@ -1,0 +1,9 @@
+.c-article-infobox {
+    background: $light-gray;
+    padding: 2rem;
+}
+
+.c-widget-share-box + .c-article-infobox,
+.c-article-infobox + .c-article-infobox {
+    margin-top: 2rem;
+}

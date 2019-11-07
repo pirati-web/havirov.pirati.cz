@@ -1,25 +1,44 @@
-{% if page.url contains 'volby' %}
-<nav class="c-top-sub-nav u-center-860-down">
-  <div class="row">
-    <div class="c-top-sub-nav-inner">
-      <div class="u-cf">
-        <div class="c-top-sub-nav-header">
-          <div class="c-top-sub-nav__heading"> Volby 2018 </div>
+{% assign commaAndSpacebar = ", " %}
+
+{% for menu in site.data.menu.main %}
+  {% assign displaySubmenu = false %}
+  {% assign matches = menu.match | split: commaAndSpacebar %}
+  {% for match in matches %}
+    {% assign match_with_slash = match | append: slash %}
+    {% if page.url contains match_with_slash %}
+      {% if menu.submenu %}
+        {% assign displaySubmenu = true %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  {% if displaySubmenu %}
+  <nav class="c-top-sub-nav">
+    <div class="row">
+      <div class="c-top-sub-nav-inner columns">
+        <div class="c-top-sub-nav__header">
+          <h2 class="c-top-sub-nav__heading">
+            <a href="{{ menu.link }}">{{ menu.name }} </a>
+          </h2>
         </div>
         <div class="c-top-sub-nav-divider"></div>
         <ul class="c-top-sub-nav-items">
-          <li class="c-top-sub-nav__item">
-            <a href="{{'/volby/kde-kandidujeme.html' | relative_url }}"> Kde kandidujeme? </a>
-          </li>
-          <li class="c-top-sub-nav__item">
-            <a href="{{'/volby/obecny-program.html' | relative_url }}"> Obecný program </a>
-          </li>
-          <li class="c-top-sub-nav__item">
-            <a href="{{'/volby/senat.html' | relative_url }}"> Senát </a>
-          </li>
+          {% for submenu in menu.submenu %}
+            {% assign submenuActive = false %}
+            {% assign matchEntries = submenu.match | split: commaAndSpacebar %}
+              {% for match in matchEntries %}
+                {% if page.url contains match %}
+                  {% assign submenuActive = true %}
+                {% endif %}
+              {% endfor %}
+              <li class="c-top-sub-nav__item">
+              {% if submenuActive %}<b>{% endif %}
+              <a href="{{ submenu.link }}">{{ submenu.name }} </a>
+              {% if submenuActive %}</b>{% endif %}
+            </li>
+          {% endfor %}
         </ul>
       </div>
     </div>
-  </div>
-</nav>
-{% endif %}
+  </nav>
+  {% endif %}
+{% endfor %}

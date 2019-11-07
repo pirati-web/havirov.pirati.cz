@@ -1,0 +1,24 @@
+/**
+ * Represents a content block with default visual style. This comes handy when
+ * we cannot attach proper classes, like when HTML is automatically created
+ * from Markdown writeup.
+ */
+
+.c-content-block {
+  h1:not(:first-child),
+  h2:not(:first-child),
+  h3:not(:first-child),
+  h4:not(:first-child),
+  h5:not(:first-child),
+  h6:not(:first-child) {
+    margin-top: 1.333em;
+  }
+
+  a {
+    @include emphasizedAnchor();
+  }
+
+  p {
+    @include fontFeatures();
+  }
+}

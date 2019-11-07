@@ -1,0 +1,10 @@
+.c-suggest-improvement {
+  float: right;
+  padding: .25em .5em;
+  background: lighten($primary-color, 10%);
+  color: $dark-gray;
+
+  &:hover {
+    color: $light-gray;
+  }
+}

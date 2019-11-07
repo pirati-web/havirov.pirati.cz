@@ -1,0 +1,20 @@
+.c-tile {
+  // border: 3px $primary-color solid;
+
+  &.c-tile--fill {
+    background: $light-gray;
+  }
+
+  &.c-tile--inverted.c-tile--fill {
+    color: $secondary-color;
+    background: $primary-color;
+  }
+}
+
+.c-tile__body {
+  padding: 1.25em;
+}
+
+.c-tile + .c-tile {
+  margin-top: 1.5rem;
+}

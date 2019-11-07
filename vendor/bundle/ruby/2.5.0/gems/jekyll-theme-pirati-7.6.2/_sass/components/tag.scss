@@ -1,0 +1,29 @@
+.c-tag {
+  font-size: 0.85rem;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 .3rem;
+  background: $secondary-color;
+}
+
+.c-tag:hover,
+.c-tag.is-active {
+  background: $primary-color;
+  color: $secondary-color;
+}
+
+.c-tag-list {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+
+  .c-tag-list__item {
+    display: inline-block;
+  }
+
+  .c-tag-list__item + .c-tag-list__item {
+    margin-left: 0.5rem;
+  }
+}

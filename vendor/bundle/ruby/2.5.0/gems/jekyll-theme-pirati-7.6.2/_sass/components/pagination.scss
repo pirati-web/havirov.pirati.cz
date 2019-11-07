@@ -1,0 +1,44 @@
+.c-pagination {
+  margin-top: 4rem;
+  margin-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+
+  @include breakpoint(mobile down) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  @include breakpoint(medium) {
+    margin-bottom: 2rem;
+  }
+
+  .c-pagination__previous a,
+  .c-pagination__next a {
+    color: $button-color;
+    background-color: $button-background;
+  }
+}
+
+.c-pagination__link {
+  display: inline-block;
+
+  &.c-pagination__link--current .c-pagination__anchor {
+    border: 1px $primary-color solid;
+  }
+
+  &:not(:last-child) {
+    margin-right: .75rem;
+  }
+
+  &:hover a.c-pagination__anchor {
+    color: $button-color;
+    background-color: $button-background;
+  }
+}
+
+.c-pagination__anchor {
+  padding: $button-padding;
+  color: $anchor-color;
+  display: block;
+}

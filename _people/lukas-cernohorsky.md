@@ -1,11 +1,13 @@
 ---
 uid: lukas.cernohorsky
 name:     Lukáš Černohorský  	# běžně používáné jméno
-fullname: Ing. Lukáš Černohorský  	# jméno s tituly etc.
+titles:
+  before: Ing.
+  after:
 category:                 	# kategorie: rp, praha, vary, hradec, jmk, senat
 - psp
 img: people/lukas-cernohorsky.jpg   # 165 x 220
-description: poslanec PSP ČR za Moravskoslezský kraj           	# kratký popis, max 160 znaků
+description: poslanec PSP ČR za Moravskoslezský kraj a místopředseda místního sdružení Ostrava           	# kratký popis, max 160 znaků
 
 mail:
 - lukas.cernohorsky@pirati.cz
@@ -31,5 +33,3 @@ Ve svém volném čase se věnuje společenskému tanci, kterému propadl před 
 
 ### Kalendář
 <iframe src="https://calendar.google.com/calendar/embed?src=rq39momo7ihnr2um3pmatnt2j8%40group.calendar.google.com&ctz=Europe%2FPrague" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
-
