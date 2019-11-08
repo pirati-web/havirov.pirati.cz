@@ -18,3 +18,7 @@ profiles:
   twitter:
   linkedin: 
 ---
+
+Marcel se narodil dne 21. 8. 1992 v Havířově, kde žije dosud v městské části Podlesí.
+
+Vystudoval a současně i studuje národohospodářský program zaměřený na monetární systémy. Pracovní zkušenosti nabývá v oblasti administrativy a podnikatelské činnosti. Záliby, které ho odpoutávají od strastí všedního dne, jsou četba odborné lieratury, reggae hudba a československá historie.
