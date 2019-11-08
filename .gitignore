@@ -1,9 +1,11 @@
 _site/
-_podklady/html/pirati.cz/
-
+.bundle
+.jekyll-cache/
 .sass-cache/
 .jekyll-metadata
 .jekyll-cache
+.directory
+vendor/
 
 Gemfile.lock
 desktop.ini
