@@ -19,6 +19,13 @@ main:
   - link: /volby/
     name: Volby
     match: volby
+    submenu:
+      - link: /volby/programove-priority
+        name: Programové priority
+        match: priority
+      - link: /volby/program2018
+        name: Program pro volby 2018
+        match: program
   - link: https://nalodeni.pirati.cz/
     name: Připoj se
   - link: /kontakt/

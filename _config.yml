@@ -116,7 +116,9 @@ collections:
   people:
     output: true
     permalink: /lide/:path/
-
+  program:
+    output: true
+    permalink: /volby/:path/
   program:
     output: true
     permalink: /komunalni-volby/program/:path/
