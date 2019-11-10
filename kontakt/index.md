@@ -15,14 +15,6 @@ na schůzi (viz <a href="{{ '/' | relative_url }}">krajský kalendář</a>).
 </div>
 
 <div class="o-section-header o-section-header--indented">
-  <h1 class="t-h2-alt">Materiály ke stažení</h1>
-
-<ul>
-  <li><a href="{{ 'assets/pdf/povolebni-strategie.pdf' | relative_url }}" target="_blank">Povolební strategie</a></li>
-</ul>
-</div>
-
-<div class="o-section-header o-section-header--indented">
   <h1 class="t-h2-alt">Poslanci</h1>
 
 {% assign person = site.people | where_exp: "item","item.uid contains 'lukas.cernohorsky'" | first  %}
