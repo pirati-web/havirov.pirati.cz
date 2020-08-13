@@ -13,7 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
 keywords: piráti, česká pirátská strana, svoboda, demokracie, havířov,
 
 administrator:
-  email: michal.breskovec@pirati.cz # mail(y), kam pujdou chybove vystupy; vice e-mailu oddelujte carkou
+  email: jan.suchanek@pirati.cz, michal.breskovec@pirati.cz # mail(y), kam pujdou chybove vystupy; vice e-mailu oddelujte carkou
 
 organization:
   name: Piráti Havířov
