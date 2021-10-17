@@ -5,11 +5,13 @@ titles:
   before: Mgr. Bc.
   after:
 category:                 		# kategorie: rp, praha, vary, hradec, jmk, senat
+- zast
 - komise
+ordzast: 2 
 ordkomise: 1 
 
 img: people/kristyna-nemcova.jpg           # 165 x 220
-description: členka Komise bytové rady města Havířova # kratký popis, max 160 znaků
+description: zastupitelka města Havířova a členka Komise bytové rady města Havířova # kratký popis, max 160 znaků
 mail:
 mob:
 profiles:

@@ -6,10 +6,12 @@ titles:
   after:
 category:                 		# kategorie: rp, praha, vary, hradec, jmk, senat
 - komise
+- kvybor
 ordkomise: 6
+ordkvybor: 1
 
 img: people/marcel-molnar.jpg           # 165 x 220
-description: člen Komise rozvojové města Havířova # kratký popis, max 160 znaků
+description: člen Komise rozvojové a člen Kontrolního výboru města Havířova	# kratký popis, max 160 znaků
 mail:
 mob:
 profiles:

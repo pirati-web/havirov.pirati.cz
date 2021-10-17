@@ -6,12 +6,10 @@ titles:
   after:
 category:                 	# kategorie: rp, praha, vary, hradec, jmk, senat
 - zast
-- kvybor
 ordzast: 1
-ordkvybor: 1
 
 img: people/martin-redr.jpg   # 165 x 220
-description: zastupitel města Havířov, člen Kontrolního výboru a předseda klubu, místopředseda místního sdružení Karvinsko          	# kratký popis, max 160 znaků
+description: zastupitel města Havířov a předseda klubu	# kratký popis, max 160 znaků
 mail:
 - martin.redr@pirati.cz
 mob: +420 721 838 298

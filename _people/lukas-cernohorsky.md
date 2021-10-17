@@ -5,9 +5,9 @@ titles:
   before: Ing.
   after:
 category:                 	# kategorie: rp, praha, vary, hradec, jmk, senat
-- psp
+#- psp
 img: people/lukas-cernohorsky.jpg   # 165 x 220
-description: poslanec PSP ČR za Moravskoslezský kraj a místopředseda místního sdružení Ostrava           	# kratký popis, max 160 znaků
+description: byl poslanec PSP ČR za Moravskoslezský kraj 2017-2021           	# kratký popis, max 160 znaků
 
 mail:
 - lukas.cernohorsky@pirati.cz
@@ -16,7 +16,7 @@ profiles:
   facebook: 		http://www.facebook.com/lukas.cernohorsky
   twitter: 		  
   flickr:
-ordpsp: 1
+#ordpsp: 1
 ---
 
 Lukáš Černohorský (\*1984) se narodil v Dlouhé Lhotě u Příbrami. Odkud se přestěhoval do Ostravy.
