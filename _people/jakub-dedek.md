@@ -5,8 +5,6 @@ titles:
   before:
   after:
 category:
-- zast
-ordpak: 1
 img: people/jakub-dedek.jpg
 heroImg: header/panorama.jpg
 description: zastupitel městského obvodu Poruba, koordinátor dobrovolníků pro Moravskoslezský kraj a místopředseda místního sdružení Ostrava
