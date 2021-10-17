@@ -2,21 +2,21 @@
 uid: jakub.dedek
 name: Jakub Dedek
 titles:
-  before: 
-  after: 
+  before:
+  after:
 category:
-- koordinator
-- kontaktni_osoba
+- zast
 ordpak: 1
 img: people/jakub-dedek.jpg
-description: koordinátor dobrovolníků pro Moravskoslezský kraj
+heroImg: header/panorama.jpg
+description: zastupitel městského obvodu Poruba, koordinátor dobrovolníků pro Moravskoslezský kraj a místopředseda místního sdružení Ostrava
 mail: jakub.dedek@pirati.cz
 mob: +420 770 113 644
 profiles:
   github:
-  facebook:
+  facebook:				
   twitter:
-  linkedin: 
+  linkedin:
 ---
 
 (* 21. dubna 1992)

@@ -23,7 +23,7 @@ organization:
   address: |
     PiHa – pirátské centrum a kancelář klubu
     Palackého 689/2, Havířov – Město
-  residenceImg:
+  residenceImg: piha/piha.jpg
   mapLink: https://goo.gl/maps/bR5BJjDU1fwBUCBe7
   redmineLink: https://redmine.pirati.cz/projects
   dataBoxId: b2i4r6j
@@ -72,8 +72,8 @@ twitter:
 instagram:
   profilePage: https://www.instagram.com/piratihavirov/
 
-flicker:
-  profilePage: https://www.flickr.com/photos/pirati/
+youtube:
+  profilePage: https://www.youtube.com/channel/UCWw8g9CKIYsO5_lW28RshIA
 
 forum:
   page: https://forum.pirati.cz/

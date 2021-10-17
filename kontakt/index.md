@@ -7,11 +7,21 @@ keywords: kontakt, adresa, telefon, mail, facebook, kde najdu, kde jsou
 contentSize: even
 ---
 
-<div class="o-section-header o-section-header--indented">
-  <h1 class="t-h2-alt">Přidejte se</h1>
+<!--- <div class="o-section-header o-section-header--indented"> -->
+<!---  <h1 class="t-h2-alt">Přidejte se</h1> -->
 
-Zajímá vás co Piráti dělají? Ozvěte se koordinátorovi nebo přijďte k nám
-na schůzi (viz <a href="{{ '/' | relative_url }}">krajský kalendář</a>).
+<!--- Zajímá vás co Piráti dělají? Ozvěte se koordinátorovi nebo přijďte k nám -->
+<!--- na schůzi (viz <a href="{{ '/' | relative_url }}">krajský kalendář</a>). -->
+<!--- </div> -->
+
+<div class="o-section-header o-section-header--indented">
+  <h1 class="t-h2-alt">Zástupci Pirátů v Havířově</h1>
+
+{% assign person = site.people | where_exp: "item","item.uid contains 'martin.redr'" | first  %}
+{% include people/profile-badge.html item=person imgSize='big' imgStyle='round' class='c-profile-badge--centered' %}
+<br>
+{% assign person = site.people | where_exp: "item","item.uid contains 'martin.kmec'" | first  %} -->
+{% include people/profile-badge.html item=person imgSize='big' imgStyle='round' class='c-profile-badge--centered' %}
 </div>
 
 <!--- <div class="o-section-header o-section-header--indented"> -->
