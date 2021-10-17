@@ -45,6 +45,10 @@ contactSummaryItems:
     iconClass: fa fa-facebook
     label: Facebooková stránka
     body: <a href="https://www.facebook.com/piratihavirov/">Piráti Havířov</a>
+  - type: custom
+    iconClass: fa fa-youtube
+    label: YouTube kanál
+    body: <a href="https://www.youtube.com/channel/UCWw8g9CKIYsO5_lW28RshIA">Piráti Havířov</a> 
 
 calendar:
   # For nice look of the calendar, make sure you get Google Calendar API key
