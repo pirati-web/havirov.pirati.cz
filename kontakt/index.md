@@ -14,12 +14,12 @@ Zajímá vás co Piráti dělají? Ozvěte se koordinátorovi nebo přijďte k n
 na schůzi (viz <a href="{{ '/' | relative_url }}">krajský kalendář</a>).
 </div>
 
-<div class="o-section-header o-section-header--indented">
-  <h1 class="t-h2-alt">Poslanci</h1>
+<!--- <div class="o-section-header o-section-header--indented"> -->
+<!---  <h1 class="t-h2-alt">Poslanci</h1> -->
 
-{% assign person = site.people | where_exp: "item","item.uid contains 'lukas.cernohorsky'" | first  %}
-{% include people/profile-badge.html item=person imgSize='big' imgStyle='round' class='c-profile-badge--centered' %}
-<br>
-{% assign person = site.people | where_exp: "item","item.uid contains 'ondrej.polansky'" | first  %}
-{% include people/profile-badge.html item=person imgSize='big' imgStyle='round' class='c-profile-badge--centered' %}
-</div>
+<!--- {% assign person = site.people | where_exp: "item","item.uid contains 'lukas.cernohorsky'" | first  %} -->
+<!--- {% include people/profile-badge.html item=person imgSize='big' imgStyle='round' class='c-profile-badge--centered' %} -->
+<!--- <br> -->
+<!--- {% assign person = site.people | where_exp: "item","item.uid contains 'ondrej.polansky'" | first  %} -->
+<!--- {% include people/profile-badge.html item=person imgSize='big' imgStyle='round' class='c-profile-badge--centered' %} -->
+<!--- </div> -->
