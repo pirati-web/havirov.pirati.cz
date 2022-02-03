@@ -3,7 +3,8 @@ layout: post
 category: CLANKY
 title: 'Piráti Havířov: Smlouva s ČEZ ESCO je nevýhodná, některé části protiprávní, utajování podivné'
 date: 2022-01-26
-author: Jana Ožanová
+#author: Jana Ožanová
+authorId: jana.ozanova
 image: posts/trubka-ventil-topeni-prumysl.jpg
 tags:
   - Moravskoslezský-kraj
